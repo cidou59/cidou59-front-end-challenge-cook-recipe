@@ -1,66 +1,75 @@
-td /* Toutes les cellules des tableaux... */
-{
-    border: 1px solid black; /* auront une bordure de 1px */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --young-serif: 'Young Serif', serif;
+  --outfit: 'Outfit', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  line-height: 1.5;
+  color: var(--stone-600);
 }
 
-/* body{
-    background-color: hsl(30, 54%, 90%);
-} */
-
-
-/* main {
-    background-color: white;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    padding: 25px;
-    border-radius: 25px;
-} */
-/* main{
-    background-color: white;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
-    
-} */
-/* section {
-    width: 100%;
-  } */
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(30, 54%, 90%);
-    min-height: 100vh;
-    margin: 0;
-  }
-  
-  main {
-    background-color: white;
-    width: 80%; /* Ajustez cette valeur selon vos besoins */
-    max-width: 1200px; /* Ajustez cette valeur selon vos besoins */
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    /* text-align: center; */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--stone-100);
 }
+
+main {
+  width: 80%; 
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre les sections à l'intérieur de main */
+}
+
+.container {
+  background-color: var(--white);
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
 
 .image_omellette {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* Espace entre l'image et le titre */
-  }
-  
-  .image_omellette img {
-    max-width: 100%;
-    height: auto;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espace entre l'image et le titre */
+}
+
+.image_omellette img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+h1{
+  color:var(--stone-900);
+  font-size: 2.5rem;
+}
+h2 {
+  color: var(--brown-800);
+  font-size: 1.75rem;
+}
+h1, h2 {
+  font-family: var(--young-serif);
+  font-weight: var(--font-weight-normal);
+  margin: 0.5rem 0 1.5rem;
+}
+
+ 
