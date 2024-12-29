@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 7rem 1rem;
   margin: 0;
   background-color: var(--stone-100);
 }
@@ -72,4 +73,41 @@ h1, h2 {
   margin: 0.5rem 0 1.5rem;
 }
 
- 
+.preparation {
+  background-color: var(--rose-50);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+}
+
+.preparation h3 {
+  color: var(--rose-800);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-medium);
+}
+
+table {
+  margin-top: 1.5rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+tr:last-child td {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nutrition-label {
+  padding-left: 2rem;
+}
+
+.nutrition-value {
+  color: var(--brown-800);
+  font-weight: var(--font-weight-bold);
+  padding-right: 2rem;
+}
